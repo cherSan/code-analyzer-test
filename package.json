@@ -8,5 +8,9 @@
   },
   "devDependencies": {
     "code-analyzer": "file:.."
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.46.3",
+    "@typescript-eslint/parser": "^8.46.3"
   }
 }
