@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "code-analyzer": "code-analyzer",
+    "code-analyzer": "code-analyzer --watch",
     "dev": "echo 'Example project for testing code-analyzer'"
   },
   "devDependencies": {

@@ -6,31 +6,13 @@ interface buttonProps {
     readonly variant?: 'primary' | 'secondary';
 }
 
-const unusedVariable = 'This should trigger lint warning'
+const unusedVariable = 'This should trigger lint warning';
 
-
-
-
-
-export const Button: React.FC<buttonProps> = ({ children, onClick, variant = 'primary' }) =>
-
-{
-
-    return (
-        <button
-
-
-            className={`btn btn-${variant}`} onClick={onClick} style={{ padding: '10px' }}>
-            {children}
-        </button>
-    )
-}
-
-
-
-
-
-
+export const Button: React.FC<buttonProps> = ({ children, onClick, variant = 'primary' }) => (
+    <button className={`btn btn-${variant}`} onClick={onClick} style={{ padding: '10px' }}>
+        {children}
+    </button>
+);
 function UnusedComponent() {
-    return <div>Never used</div>
+    return <div>Never used</div>;
 }
