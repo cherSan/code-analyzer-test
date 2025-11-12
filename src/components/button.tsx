@@ -30,7 +30,6 @@ export const Button: React.FC<buttonProps> = ({ children, onClick, variant = 'pr
 
 
 
-
 function UnusedComponent() {
     return <div>Never used</div>
 }

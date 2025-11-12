@@ -7,7 +7,14 @@
     "dev": "echo 'Example project for testing code-analyzer'"
   },
   "devDependencies": {
-    "code-analyzer": "file:.."
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/jest": "^30.0.0",
+    "code-analyzer": "file:..",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
+    "ts-jest": "^29.4.5",
+    "typescript": "^5.9.3"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^8.46.3",

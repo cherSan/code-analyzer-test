@@ -1,0 +1,3 @@
+{"total": {"lines":{"total":5,"covered":4,"skipped":0,"pct":80},"statements":{"total":6,"covered":5,"skipped":0,"pct":83.33},"functions":{"total":2,"covered":1,"skipped":0,"pct":50},"branches":{"total":1,"covered":1,"skipped":0,"pct":100},"branchesTrue":{"total":0,"covered":0,"skipped":0,"pct":"Unknown"}}
+,"C:\\Users\\chersan\\WebstormProjects\\code-analyzer\\example\\src\\components\\button1.tsx": {"lines":{"total":5,"covered":4,"skipped":0,"pct":80},"functions":{"total":2,"covered":1,"skipped":0,"pct":50},"statements":{"total":6,"covered":5,"skipped":0,"pct":83.33},"branches":{"total":1,"covered":1,"skipped":0,"pct":100}}
+}

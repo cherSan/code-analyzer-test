@@ -1,36 +1,31 @@
-import React from 'react';
+import "@testing-library/jest-dom";
+import { render, screen } from "@testing-library/react";
+import { Button } from "./button1";
 
-interface buttonProps {
-    readonly children: React.ReactNode;
-    readonly onClick?: () => void;
-    readonly variant?: 'primary' | 'secondary';
-}
+describe("Button1 Component", () => {
+    test("renders correctly with children", () => {
+        render(<Button>Click me</Button>);
 
-const unusedVariable = 'This should trigger lint warning'
+        expect(screen.getByText("Click me")).toBeInTheDocument();
+    });
 
+    test("renders correctly with children (incorrect)", () => {
+        render(<Button>Click me</Button>);
 
+        expect(screen.getByText("Click me!!!")).toBeInTheDocument();
+    });
 
+    test("handles onClick", () => {
+        const handleClick = jest.fn();
+        render(<Button onClick={handleClick}>Click me</Button>);
 
+        screen.getByText("Click me").click();
+        expect(handleClick).toHaveBeenCalledTimes(1);
+    });
 
-export const Button: React.FC<buttonProps> = ({ children, onClick, variant = 'primary' }) =>
-
-{
-
-    return (
-        <button
-
-
-            className={`btn btn-${variant}`} onClick={onClick} style={{ padding: '10px' }}>
-            {children}
-        </button>
-    )
-}
-
-
-
-
-
-
-function UnusedComponent() {
-    return <div>Never used</div>
-}
+    describe("Button1 Component - deep", () => {
+        it("renders correctly with children deep", () => {
+            expect(true).toBe(true);
+        })
+    })
+});
