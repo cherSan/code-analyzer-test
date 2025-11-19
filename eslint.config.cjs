@@ -56,8 +56,6 @@ module.exports = {
                 alphabetize: { order: "asc", caseInsensitive: true },
             },
         ],
-
-        "prettier/prettier": "error",
     },
     ignorePatterns: ["node_modules/**", "dist/**", "build/**"],
 };
